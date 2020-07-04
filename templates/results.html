@@ -1,0 +1,100 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results</title>
+</head>
+<style>
+   body {
+  background-color: #D3D3D3;
+}
+table {
+  border-collapse: collapse;
+  width: 65%;
+    align-content: center;
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+}
+tr{
+        border-radius: 15px;
+
+}
+tr:nth-child(even){background-color: #f2f2f2;
+      background-image: url("/static/images/white_2.jpg");
+}
+tr:nth-child(odd){background-color: snow;
+      background-image: url("/static/images/white_1.jpg");
+}
+td {
+
+    padding: 10px;
+}
+td:first-child {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+td:last-child {
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+p{
+ margin: auto;
+  width: 50%;
+  background-color: black;
+  border-radius: 12px;
+      color: white;
+
+   padding: 12px;
+   font-size: 1.25em;
+   background-image: url("/static/images/black_1.jpg");
+}
+
+
+th {
+  background-color: black;
+  color: white;
+       background-image: url("/static/images/black_1.jpg");
+border-radius: 15px;
+}
+       body {
+        background-image: url("/static/images/background-image.jpg");
+      background-repeat: no-repeat;
+  background-attachment: fixed;
+      background-size: 100% 100%;
+   }
+</style>
+<body>
+<div align="center">
+        <p>Click to download zip of detected images. Total time taken is {{time}}</p>
+    <a href={{ zip_dir }}>
+  <img src="/static/images/download.png" alt="W3Schools" width="170" height="80">
+    </a>
+    <br>
+    <br>
+    {% if results %}
+        <table>
+            <tr>
+            <th>Time Stamp</th>
+            <th>Image</th>
+            </tr>
+            <tbody>
+            {% for img_name in results %}
+                <tr>
+                    <td>{{ img_name }}</td>
+                    <td><img src="/static/{{ file }}/output/{{ img_name }}" alt="{{ img_name }}"></td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        No results :(
+    {% endif %}
+
+</div>
+</body>
+</html>

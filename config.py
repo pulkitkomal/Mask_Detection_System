@@ -1,0 +1,1 @@
+PATH = '/mnt/A4D65FC4D65F9580/PyCharm/untitled'

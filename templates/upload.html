@@ -1,0 +1,116 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html>
+<title>Mask Detection System</title>
+<head>
+<!--  <link rel="stylesheet" href="/static/styles.css">-->
+</head>
+<style>
+   h1{margin-top: 5%;
+       /*margin: auto;*/
+  width: 60%;
+  background-color: black;
+  border-radius: 12px;
+      color: white;
+
+      padding: 2%;
+        font-weight: bold;
+  font-size: 3.5em;
+   background-image: url("/static/images/black_1.jpg");
+
+   }
+p{
+ margin: auto;
+  width: 50%;
+  background-color: black;
+  border-radius: 12px;
+      color: white;
+
+   padding: 12px;
+   font-size: 1.25em;
+   background-image: url("/static/images/black_1.jpg");
+}
+
+   body {
+        background-image: url("/static/images/background-image.jpg");
+      background-repeat: no-repeat;
+  background-attachment: fixed;
+      background-size: 100% 100%;
+   }
+form {
+  margin: auto;
+  width: 30%;
+  background-color: white;
+  border-radius: 15px;
+  margin-top: 40px;
+  padding: 20px;color: snow;
+      background-image: url("/static/images/white_1.jpg");
+
+}
+form .submit-button {
+  border: none;
+  background-color: #000000;
+  padding: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  height: 30px;
+   color: #f2f2f2;
+}
+form .upload-button {
+  border: none;
+  background-color: #000000;
+  padding: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  height: 30px;
+   width: 80%;
+   color: #f2f2f2;
+}
+   .submit-button:hover {
+  background-color: #696969	;
+}
+
+</style>
+   <body>
+   <div class="bg"></div>
+
+   <div align="center">
+   <h1>Mask Detection System</h1>
+      <br>
+      <br>
+   <p>This mask detection system uses a trained model for mask detection.<br>
+   The model was trained using MobileNetV2. <br>MobileNet-v2 is a convolutional neural network that is 53 layers deep. </p>
+   <br>
+   <br>
+   <p>Upload the video below</p>
+   </div>
+      <form action = "/results" method = "POST"
+         enctype = "multipart/form-data">
+         <div align="center">
+            <input class="upload-button" type = "file" name = "file" />
+         </div>
+         <div align="center">
+            <br>
+                <button type="submit" class="submit-button" onclick="myFunction()">Submit</button>
+         </div>
+         <div align="center">
+            <img  id="loading" style="width:10%; ">
+         </div>
+         <div style="color: black" align="center">
+            <span id ='time' style="padding-bottom: 5%"></span>
+
+         </div>
+
+      </form>
+   <script>
+function myFunction() {
+  document.getElementById("time").innerHTML = "This will take 2 - 3 mins";
+  document.getElementById('loading').src='/static/images/loading.gif';
+}
+</script>
+   </body>
+</html>

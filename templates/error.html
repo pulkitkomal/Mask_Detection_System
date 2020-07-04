@@ -1,0 +1,119 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results</title>
+</head>
+<style>
+   body {
+  background-color: #D3D3D3;
+}
+table {
+  border-collapse: collapse;
+  width: 65%;
+    align-content: center;
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+}
+tr{
+        border-radius: 15px;
+
+}
+tr:nth-child(even){background-color: #f2f2f2;
+      background-image: url("/static/images/white_2.jpg");
+}
+tr:nth-child(odd){background-color: snow;
+      background-image: url("/static/images/white_1.jpg");
+}
+td {
+
+    padding: 10px;
+}
+td:first-child {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+td:last-child {
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+p{
+ margin: auto;
+  width: 50%;
+  background-color: black;
+  border-radius: 12px;
+      color: white;
+
+   padding: 12px;
+   font-size: 1.25em;
+   background-image: url("/static/images/black_1.jpg");
+}
+
+
+th {
+  background-color: black;
+  color: white;
+       background-image: url("/static/images/black_1.jpg");
+border-radius: 15px;
+}
+       body {
+        background-image: url("/static/images/background-image.jpg");
+      background-repeat: no-repeat;
+  background-attachment: fixed;
+      background-size: 100% 100%;
+   }
+    form {
+  margin: auto;
+  width: 30%;
+  background-color: white;
+  border-radius: 15px;
+  margin-top: 40px;
+  padding: 20px;color: snow;
+      background-image: url("/static/images/white_1.jpg");
+
+}
+form .submit-button {
+  border: none;
+  background-color: #000000;
+  padding: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  height: 30px;
+   color: #f2f2f2;
+}
+form .upload-button {
+  border: none;
+  background-color: #000000;
+  padding: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  height: 30px;
+   width: 80%;
+   color: #f2f2f2;
+}
+   .submit-button:hover {
+  background-color: #696969	;
+}
+</style>
+<body>
+<div align="center">
+        <p>Error: {{ error }}</p>
+</div>
+<div align="center">
+<form action = "/">
+            <br>
+    <button type="submit" class="submit-button">Return To Homepage</button>
+
+      </form>
+</div>
+</body>
+</html>
