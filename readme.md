@@ -22,20 +22,20 @@ We implemented and used the model from [PyImageSearch](https://www.pyimagesearch
 
 ## Dependencies
 1. [Tensorflow](https://pypi.org/project/tensorflow/)
-```python
+```bash
 pip install tensorflow
 ```
 2. [Numpy](https://pypi.org/project/numpy/)
-```python
+```bash
 pip install numpy
 ```
 3. [openCV](https://pypi.org/project/opencv-python/)
-```python
+```bash
 pip install opencv-python
 ```
 4. [Flask](https://pypi.org/project/Flask/)
 
-```python
+```bash
 pip install Flask
 ```
 
