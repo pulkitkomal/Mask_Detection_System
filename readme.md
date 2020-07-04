@@ -10,11 +10,11 @@ Video Upload Screen
 
 Video Output Screen
 
-![Video Upload](https://drive.google.com/uc?export=view&id=1x-R-7GK2h0mye-HQexglSWyUVKWrkNxl)
+![Video Output](https://drive.google.com/uc?export=view&id=1x-R-7GK2h0mye-HQexglSWyUVKWrkNxl)
 
 Error Screen
 
-![Video Upload](https://drive.google.com/uc?export=view&id=1cX0__fDCuRA0nuC0UtCQnXB6j7x-aEb_)
+![Error](https://drive.google.com/uc?export=view&id=1cX0__fDCuRA0nuC0UtCQnXB6j7x-aEb_)
 
 ## The model used 
 
